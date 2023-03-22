@@ -7,12 +7,23 @@ const ingredients = [
   "Condiments",
 ];
 
-const ul = document.getElementById("ingredients");
+// const ul = document.getElementById("ingredients");
 
-for (let i = 0; i < ingredients.length; i += 1) {
+// for (let i = 0; i < ingredients.length; i += 1) {
+//   const li = document.createElement("li");
+//   li.textContent = ingredients[i];
+//   li.classList.add("item");
+//   ul.append(li);
+//   console.log(li);
+// }
+
+const ul = document.querySelector("#ingredients");
+
+const mkList = ingredients.map((ingredient) => {
   const li = document.createElement("li");
-  li.textContent = ingredients[i];
   li.classList.add("item");
-  ul.append(li);
-  console.log(li);
-}
+  li.textContent = ingredient;
+  return li;
+});
+
+ul.append(...mkList);
