@@ -4,5 +4,5 @@ const textOutput = document.querySelector("#text");
 console.dir(textOutput);
 
 inputEl.addEventListener("input", () => {
-  textOutput.style.fontSize = `${inputEl.value}px`;
+  textOutput.style.fontSize = `${event.currentTarget.value}px`;
 });
