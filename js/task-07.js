@@ -3,6 +3,6 @@ console.dir(inputEl);
 const textOutput = document.querySelector("#text");
 console.dir(textOutput);
 
-inputEl.addEventListener("input", () => {
+inputEl.addEventListener("input", (event) => {
   textOutput.style.fontSize = `${event.currentTarget.value}px`;
 });
