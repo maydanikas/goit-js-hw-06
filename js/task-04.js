@@ -8,10 +8,10 @@ let counter = 0;
 decrementBtn.addEventListener("click", function () {
   counterValue -= 1;
   valueEl.textContent = counterValue;
-  return counterValue;
+  // return counterValue;
 });
 incrementBtn.addEventListener("click", function () {
   counterValue += 1;
   valueEl.textContent = counterValue;
-  return counterValue;
+  // return counterValue;
 });
